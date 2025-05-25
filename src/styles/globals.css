@@ -12,6 +12,9 @@
     border: 1px solid #FFA1B3;
     color:#FFA1B3
   } 
+  .header{
+    font-size: 22px;
+  }
 }
 
 @layer base {
