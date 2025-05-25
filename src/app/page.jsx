@@ -8,6 +8,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <AboutMe />
+      <h1 className="mb-4">To be continue. 05/26/2025</h1>
     </main>
   );
 }

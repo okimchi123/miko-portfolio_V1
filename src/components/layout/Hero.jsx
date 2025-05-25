@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <main className="w-[80%] h-[400px] flex flex-col text-center justify-center items-center">
+    <main className="w-[80%] h-[430px] flex flex-col text-center justify-center items-center">
       <Reveal delayProp={0.1}>
         <h1 className="text-[70px] font-bold leading-tight">
           Hi, I'm Miko<strong className="prismo">. </strong>
@@ -16,7 +16,7 @@ export default function Hero() {
       </Reveal>
       <Reveal delayProp={0.5} className="mb-2 md:mb-4">
         <p className="text-[20px] font-light tracking-wider">I build things for the web.</p>
-      </Reveal>
+      </Reveal> 
       <Reveal delayProp={0.7} >
         <Button className="bg-prismo">
             PROJECTS

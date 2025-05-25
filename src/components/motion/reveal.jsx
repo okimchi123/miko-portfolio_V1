@@ -5,7 +5,8 @@ import { useRef, useEffect } from "react"
 
 export default function Reveal({children, delayProp, ...props}){
     const ref = useRef(null)
-    const isInView = useInView(ref, {once:true})
+    const isInView = useInView(ref, { once: true, amount: 0.8 })
+
 
     const controls = useAnimation()
     
