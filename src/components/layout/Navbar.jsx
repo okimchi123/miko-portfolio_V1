@@ -1,14 +1,16 @@
 import { AlignJustify } from "lucide-react";
 import { Button } from "../ui/button";
+import NavMotion from "../motion/navmotion";
 
 export default function NavBar() {
   return (
-    <nav className="sticky top-0 flex w-[80%] dark bg-background items-center justify-between py-5">
-      <h1 className="font-medium text-[20px]">MIKO BASILIO</h1>
-      <ul className="hidden md:flex gap-5 tracking-widest text-[18px]">
-        <li>About</li>
-        <li>Projects</li>
-        <li>Experience</li>
+    <nav className="sticky top-0 flex w-[80%] dark bg-background select-none items-center justify-between py-5">
+      <NavMotion />
+      <h1 className="font-medium text-[18px] tracking-widest cursor-pointer">MIKO BASILIO</h1>
+      <ul className="hidden md:flex gap-5 tracking-widest text-[16px]">
+        <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">About</li>
+        <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">Projects</li>
+        <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">Experience</li>
       </ul>
 
       <Button
