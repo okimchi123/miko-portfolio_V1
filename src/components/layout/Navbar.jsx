@@ -1,6 +1,6 @@
 import { AlignJustify } from "lucide-react";
-import { Button } from "../ui/button";
-import NavMotion from "../motion/navmotion";
+import { Button } from "@/components/ui/button";
+import NavMotion from "@/components/motion/navmotion";
 
 export default function NavBar() {
   return (
