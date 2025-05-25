@@ -3,7 +3,7 @@
 import {motion, useInView, useAnimation} from "framer-motion"
 import { useRef, useEffect } from "react"
 
-export default function Reveal({children, ...props}){
+export default function Reveal({children, delayProp, ...props}){
     const ref = useRef(null)
     const isInView = useInView(ref, {once:true})
 
@@ -20,13 +20,13 @@ export default function Reveal({children, ...props}){
         ref={ref}
         variants={
             {
-                hidden: {opacity:0, y:-75},
+                hidden: {opacity:0, y:-25},
                 visible: {opacity:1, y:0},
             }
         }
         initial="hidden"
         animate={controls}
-        transition={{duration:0.5}}
+        transition={{duration:0.2, delay:delayProp}}
         {...props}
         >
             {children}
