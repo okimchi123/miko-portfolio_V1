@@ -15,7 +15,7 @@ export default function AboutMe() {
     "REST API",
   ];
   return (
-    <section className="h-[400] md:h-fit py-8 w-[80%] gap-5 flex flex-col md:flex-row items-start">
+    <section className="h-[400] md:h-fit py-8 border w-[80%] gap-5 flex flex-col md:flex-row items-start">
       <Reveal delayProp={0.2} className="w-full">
         <article>
           <h1 className="header mt-1">
@@ -23,7 +23,7 @@ export default function AboutMe() {
           </h1>
           <p className="text-justify font-light">
             I'm a Web Developer with a strong passion for crafting simple but
-            engaging web experience, particularly on the front end. I enjoy
+            engaging web experience, particularly on the <strong className="prismo font-medium">Frontend</strong>. I enjoy
             turning ideas into working websites, and I'm always set on finishing
             projects well using modern tools for great results.
           </p>
