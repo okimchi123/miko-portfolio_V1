@@ -1,4 +1,5 @@
 import Reveal from "../motion/reveal";
+import Image from "next/image";
 
 export default function AboutMe() {
   const skills = [
@@ -15,18 +16,22 @@ export default function AboutMe() {
     "REST API",
   ];
   return (
-    <section className="h-[400] md:h-fit py-8 w-[80%] gap-5 flex flex-col md:flex-row items-start">
+    <section className="h-[400] md:h-fit py-8 w-[80%] gap-20 flex flex-col md:flex-row items-start">
       <Reveal delayProp={0.2} className="w-full">
         <article>
           <h1 className="header mt-1">
             About <strong className="prismo"> me </strong>
           </h1>
-          <p className="text-justify font-light">
+          <p className="text-justify font-light mb-4">
             I'm a Web Developer with a strong passion for crafting simple but
             engaging web experience, particularly on the <strong className="prismo font-medium">Frontend</strong>. I enjoy
             turning ideas into working websites, and I'm always set on finishing
             projects well using <strong className="prismo font-medium">modern tools</strong> for great results.
           </p>
+          <figure className="flex gap-2">
+        <Image src="/github.svg" width="40" height="40" alt="github" />
+        <Image src="/linkedin.svg" width="40" height="40" alt="linkedin" />
+          </figure>
         </article>
       </Reveal>
 
