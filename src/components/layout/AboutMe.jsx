@@ -25,7 +25,7 @@ export default function AboutMe() {
             I'm a Web Developer with a strong passion for crafting simple but
             engaging web experience, particularly on the <strong className="prismo font-medium">Frontend</strong>. I enjoy
             turning ideas into working websites, and I'm always set on finishing
-            projects well using modern tools for great results.
+            projects well using <strong className="prismo font-medium">modern tools</strong> for great results.
           </p>
         </article>
       </Reveal>
