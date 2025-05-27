@@ -17,7 +17,7 @@ export default function AboutMe() {
     "REST API",
   ];
   return (
-    <section className="h-fit border md:h-[500px] py-20 md:py-8 w-[90%] md:w-[80%] gap-20 md:gap-20 flex flex-col md:flex-row items-center">
+    <section className="h-fit md:h-[500px] py-20 md:py-8 w-[90%] md:w-[80%] gap-20 md:gap-20 flex flex-col md:flex-row items-center">
       <Reveal delayProp={0.2} className="w-full">
         <article>
           <h1 className="header mt-1">
