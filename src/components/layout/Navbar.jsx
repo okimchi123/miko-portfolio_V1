@@ -1,16 +1,32 @@
 import { AlignJustify } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NavMotion from "@/components/motion/navmotion";
+import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <nav className="sticky top-0 flex w-[90%] md:w-[80%] dark bg-background select-none items-center justify-between py-5">
+    <nav className="z-1000 sticky -top-0.5 flex w-[91%] md:w-[81%] dark bg-background select-none items-center justify-between py-5">
       <NavMotion />
-      <h1 className="font-medium text-[18px] tracking-widest cursor-pointer">MIKO BASILIO</h1>
+      <Link href="#start">
+      <h1 className="font-medium text-[18px] tracking-widest cursor-pointer">
+        MIKO BASILIO
+      </h1>
+      </Link>
+      
       <ul className="hidden md:flex gap-5 tracking-widest text-[16px]">
-        <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">About</li>
-        <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">Projects</li>
-        <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">Experience</li>
+        <Link href="#about">
+          <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">
+            About
+          </li>
+        </Link>
+        <Link href="#projects">
+          <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">
+            Projects
+          </li>
+        </Link>
+          <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">
+            Experience
+          </li>
       </ul>
 
       <Button
