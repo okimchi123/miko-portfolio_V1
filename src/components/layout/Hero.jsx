@@ -1,9 +1,10 @@
 import Reveal from "@/components/motion/reveal";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <main className="w-[90%] md:w-[80%] h-[600px] md:h-[500px] flex flex-col text-center justify-center items-center">
+    <main id="start" className="w-[90%] scroll-mt-[200px] md:w-[80%] h-[600px] md:h-[500px] flex flex-col text-center justify-center items-center">
       <Reveal delayProp={0.1}>
         <h1 className="text-[70px] font-bold leading-tight">
           Hi, I'm Miko<strong className="prismo">. </strong>
@@ -15,12 +16,14 @@ export default function Hero() {
         </span>
       </Reveal>
       <Reveal delayProp={0.5} className="mb-2 md:mb-4">
-        <p className="text-[20px] font-light tracking-wider">I build things for the web.</p>
-      </Reveal> 
-      <Reveal delayProp={0.7} >
-        <Button className="bg-prismo">
-            PROJECTS
-        </Button>
+        <p className="text-[20px] font-light tracking-wider">
+          I build things for the web.
+        </p>
+      </Reveal>
+      <Reveal delayProp={0.7}>
+        <Link href="#projects">
+          <Button className="bg-prismo">PROJECTS</Button>
+        </Link>
       </Reveal>
     </main>
   );
