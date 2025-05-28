@@ -17,10 +17,10 @@ export default function AboutMe() {
     "REST API",
   ];
   return (
-    <section className="h-fit md:h-[500px] py-20 md:py-8 w-[90%] md:w-[80%] gap-20 md:gap-20 flex flex-col md:flex-row items-center">
+    <section id="about" className="h-fit md:h-[500px] py-20 md:py-8 w-[90%] md:w-[80%] gap-20 md:gap-20 flex flex-col md:flex-row items-center">
       <Reveal delayProp={0.2} className="w-full">
         <article>
-          <h1 className="header mt-1">
+          <h1 className="header md:mt-6 lg:mt-12 xl:mt-4">
             About <strong className="prismo"> me </strong>
           </h1>
           <p className="text-justify font-light mb-4">
@@ -65,7 +65,7 @@ export default function AboutMe() {
             {skills.map((item) => (
               <figure
                 key={item}
-                className="text-[15px] bg-pink-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 flex px-3 py-2 items-center justify-center "
+                className="text-[15px] bg-pink-300 rounded-md bg-opacity-50 flex px-3 py-2 items-center justify-center "
               >
                 {item}
               </figure>
