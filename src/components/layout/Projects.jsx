@@ -4,6 +4,7 @@ import { Link, Code } from "lucide-react";
 import NextLink from "next/link";
 
 export default function Projects() {
+// put postData to model folder
   const postData = [
     {
       Image: "/healthharmony.png",
