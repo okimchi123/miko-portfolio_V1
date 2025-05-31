@@ -9,7 +9,7 @@ export default function Projects() {
   
 
   return (
-    <section id="projects" className="w-[90%] md:w-[80%] h-[400px] flex flex-col gap-2 scroll-mt-[100px]">
+    <section id="projects" className="w-[90%] md:w-[80%] mb-5 flex flex-col gap-2 scroll-mt-[100px]">
       <Reveal delayProp="0.2">
         <h1 className="header">Projects</h1>
       </Reveal>
