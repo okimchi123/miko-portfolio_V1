@@ -13,7 +13,7 @@ export default function NavBar() {
       </h1>
       </Link>
       
-      <ul className="hidden md:flex gap-5 tracking-widest text-[16px]">
+      <ul className="hidden md:flex justify-center items-center gap-5 tracking-widest text-[16px]">
         <Link href="#about">
           <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">
             About
@@ -24,17 +24,15 @@ export default function NavBar() {
             Projects
           </li>
         </Link>
-          <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">
-            Experience
-          </li>
-      </ul>
-
-      <Button
+        <Button
         variant="outline"
         className="hidden md:block border-prismo active:border-white"
       >
         Resume
       </Button>
+      </ul>
+
+      
 
       <AlignJustify color="white" className="md:hidden" />
     </nav>
