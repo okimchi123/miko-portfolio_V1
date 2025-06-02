@@ -1,4 +1,4 @@
-import { AlignJustify } from "lucide-react";
+import Sidebar from "./Sidebar";
 import { Button } from "@/components/ui/button";
 import NavMotion from "@/components/motion/navmotion";
 import Link from "next/link";
@@ -35,9 +35,7 @@ export default function NavBar() {
       </Button>
       </ul>
 
-      
-
-      <AlignJustify color="white" className="md:hidden" />
-    </nav>
+      <Sidebar />
+      </nav>
   );
 }
