@@ -15,6 +15,7 @@ export default function AboutMe() {
     "MongoDB",
     "Firebase",
     "REST API",
+    "Git",
   ];
   return (
     <section id="about" className="h-fit md:h-[500px] py-20 md:py-8 w-[90%] md:w-[80%] gap-20 md:gap-20 flex flex-col md:flex-row items-center">
