@@ -18,13 +18,16 @@ export default function AboutMe() {
     "Git",
   ];
   return (
-    <section id="about" className="h-fit md:h-[500px] py-20 md:py-8 w-[90%] md:w-[80%] gap-20 md:gap-20 flex flex-col md:flex-row items-center">
+    <section
+      id="about"
+      className="h-fit md:h-[500px] py-20 md:py-8 w-[90%] md:w-[80%] gap-20 md:gap-20 flex flex-col md:flex-row items-center"
+    >
       <Reveal delayProp={0.2} className="w-full">
-        <article>
-          <h1 className="header md:mt-6 lg:mt-12 xl:mt-4">
+        <article className="md:mt-[70px] lg:mt-[80px] xl:mt-12">
+          <h1 className="header">
             About <strong className="prismo"> me </strong>
           </h1>
-          <p className="text-justify font-light mb-4">
+          <p className="text-justify font-light mb-3">
             I'm a Web Developer with a strong passion for crafting simple but
             engaging web experience, particularly on the{" "}
             <strong className="prismo font-medium">Frontend</strong>. I enjoy
@@ -33,28 +36,31 @@ export default function AboutMe() {
             <strong className="prismo font-medium">modern tools</strong> for
             great results.
           </p>
-          <figure className="flex gap-3">
-            <Link href="https://github.com/okimchi123" target="_blank">
-              <Image
-                src="/github.svg"
-                width="35"
-                height="35"
-                alt="github"
-                className=""
-              />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/miko-basilio-251348361/"
-              target="_blank"
-            >
-              <Image
-                src="/linkedin.svg"
-                width="40"
-                height="40"
-                alt="linkedin"
-                className=""
-              />
-            </Link>
+          <figure className="flex flex-col gap-1">
+            <h1 className="header">Links</h1>
+            <div className="flex gap-4 md:gap-3">
+              <Link href="https://github.com/okimchi123" target="_blank">
+                <Image
+                  src="/github.svg"
+                  width="35"
+                  height="35"
+                  alt="github"
+                  className=""
+                />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/miko-basilio-251348361/"
+                target="_blank"
+              >
+                <Image
+                  src="/linkedin.svg"
+                  width="40"
+                  height="40"
+                  alt="linkedin"
+                  className=""
+                />
+              </Link>
+            </div>
           </figure>
         </article>
       </Reveal>
