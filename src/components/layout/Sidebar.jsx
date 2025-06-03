@@ -15,13 +15,6 @@ export default function Sidebar() {
         </SheetHeader>
         <ul className="flex justify-center items-center gap-5 tracking-widest text-[16px]">
           <SheetClose asChild>
-            <Link href="#start">
-            <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">
-              Start
-            </li>
-          </Link>
-          </SheetClose>
-          <SheetClose asChild>
             <Link href="#about">
             <li className="cursor-pointer hover:-translate-y-1 transition-all hover:prismo">
               About
