@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 export default function Sidebar() {
   return (
     <Sheet>
-      <SheetTrigger className="">
+      <SheetTrigger className="md:hidden">
         <AlignJustify color="white" />
       </SheetTrigger>
       <SheetContent side="top" className="">
