@@ -1,7 +1,30 @@
-export default function ResumeModal(){
-    return(
-        <div>
-            Resume
-        </div>
-    )
+'use client'
+import { Document, Page, pdfjs } from 'react-pdf';
+import { useState } from 'react';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
+
+export default function ResumeModal() {
+  const [numPages, setNumPages] = useState(null);
+
+  const onLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
+
+  return (
+    <div className="fixed left-0 top-0 z-[1100] flex justify-center items-center h-full w-full bg-gray-900/90 overflow-auto">
+      <div className="bg-white p-4 rounded-lg max-h-[90vh] overflow-y-auto">
+        <Document file="/Miko-Resume.pdf" onLoadSuccess={onLoadSuccess}>
+          {Array.from(new Array(numPages), (_, i) => (
+            <Page key={i} pageNumber={i + 1} className="my-4 shadow" />
+          ))}
+        </Document>
+      </div>
+    </div>
+  );
 }
