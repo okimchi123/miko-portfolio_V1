@@ -8,7 +8,7 @@ export default function NavBar() {
   //add pdf react on resume button
   return (
     <nav className="z-1000 sticky -top-0.5 flex w-[91%] md:w-[81%] dark bg-background select-none items-center justify-between py-5">
-      <ResumeModal />
+     
       
       <NavMotion />
       <Link href="#start">
