@@ -4,11 +4,15 @@ import { Button } from "@/components/ui/button";
 import NavMotion from "@/components/motion/navmotion";
 import ResumeModal from "./Resume";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function NavBar() {
 
   const [resumeModal, setResumeModal] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = resumeModal ? "hidden" : "auto";
+  }, [resumeModal]);
 
   return (
     <nav className="z-1000 sticky -top-0.5 flex w-[91%] md:w-[81%] dark bg-background select-none items-center justify-between py-5">
