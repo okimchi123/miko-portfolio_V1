@@ -20,9 +20,13 @@ export default function ResumeModal({ open, close }) {
   return (
     open && (
       <div className="fixed left-0 top-0 z-[1100] px-2 flex justify-center items-center h-full w-full bg-gray-900/90 overflow-auto">
-        <X 
-        onClick={close}
-        className="absolute top-5 right-5 cursor-pointer" />
+        <div className="absolute top-3 right-5 flex items-center gap-4">
+          <a href="/Miko-Resume.pdf" download className="py-1 px-2 rounded-lg bg-white/80 text-black hover:bg-white transition-all">
+            Download
+          </a>
+          <X onClick={close} className=" cursor-pointer" />
+        </div>
+
         <div className="bg-white p-4 mt-10 md:mt-0 rounded-lg h-[90%] overflow-y-auto">
           <Document file="/Miko-Resume.pdf" onLoadSuccess={onLoadSuccess}>
             {Array.from(new Array(numPages), (_, i) => (
