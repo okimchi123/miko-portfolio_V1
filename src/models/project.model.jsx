@@ -16,6 +16,15 @@ const postData = [
       Github:"https://github.com/okimchi123/InventorySystem",
       Website:"https://express-inventory-system.vercel.app",
     },
+    {
+      Image: "/prismo.png",
+      subTitle: "still updating",
+      Title: "Prismo",
+      Role: "Full Stack Developer",
+      Description: "Prismo is a social media mock-up I built to hone my skills in full-stack web development. Using Next.js for the frontend and Firebase for the backend, I implemented key features including user profile creation and management, post management (creating, editing, and deleting posts), and a real-time chat feature. This project served as a comprehensive learning experience in building a scalable web application.",
+      Github:"https://github.com/okimchi123/prismo",
+      Website:"https://myprismo.vercel.app",
+    },
   ];
 
 export {postData};
