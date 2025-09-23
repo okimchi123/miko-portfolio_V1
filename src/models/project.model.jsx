@@ -12,7 +12,7 @@ const postData = [
       Image: "/inventorysystem.png",
       Title: "Express Inventory System",
       Role: "Full Stack Developer",
-      Description: "This system is designed to provide a centralized and efficient platform for managing company assets, with built-in data analytics and asset distribution tracking. It allows users to easily monitor asset availability, detect missing items, and identify responsible handlers through distribution logs.",
+      Description: "This system is designed to provide a centralized and efficient platform for managing company assets, with built-in data analytics and asset distribution tracking. It allows users to easily monitor asset availability, detect missing items, and identify responsible handlers through distribution logs. I built this project as an intern for the company.",
       Github:"https://github.com/okimchi123/InventorySystem",
       Website:"https://express-inventory-system.vercel.app",
     },
