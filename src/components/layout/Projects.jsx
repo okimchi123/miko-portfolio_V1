@@ -29,7 +29,9 @@ export default function Projects() {
               alt="inventory-system"
             />
             <article>
-              <h1 className="text-xl font-semibold tracking-wide">{data.Title}</h1>
+              <h1 className="text-xl font-semibold tracking-wide">{data.Title} </h1>
+              {data.subTitle && <p className="text-gray-500 font-medium text-[13px]">{data.subTitle}</p>}
+              
               <h2 className="prismo mb-2"> {data.Role} </h2>
               <p className="mb-2 text-justify">{data.Description}</p>
               <div className="flex gap-3">
