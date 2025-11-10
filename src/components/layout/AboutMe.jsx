@@ -6,13 +6,16 @@ export default function AboutMe() {
   const skills = [
     "NextJS",
     "ReactJS",
-    "Javascript",
+    "JavaScript",
+    "TypeScript",
     "Tailwind",
     "Figma",
     "UI/UX",
     "NodeJS",
+    "PHP",
     "ExpressJS",
     "MongoDB",
+    "MySQL",
     "Firebase",
     "REST API",
     "Git",
@@ -28,13 +31,10 @@ export default function AboutMe() {
             About <strong className="prismo"> me </strong>
           </h1>
           <p className="text-justify font-light mb-3">
-            I'm a Web Developer with a strong passion for crafting simple but
-            engaging web experience, particularly on the{" "}
-            <strong className="prismo font-medium">Frontend</strong>. I enjoy
-            turning ideas into working websites, and I'm always set on finishing
-            projects well using{" "}
-            <strong className="prismo font-medium">modern tools</strong> for
-            great results.
+            Honestly, I just love making websites. I'm a <strong className="prismo font-medium">Full Stack Developer</strong>
+            with a goal of building simple but engaging web applications. I love
+            having control over the entire process, using modern tools to ensure
+            that what we build is clean for people to use.
           </p>
           <figure className="flex flex-col gap-1">
             <h1 className="header">Links</h1>
