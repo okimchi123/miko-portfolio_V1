@@ -10,7 +10,6 @@ export default function AboutMe() {
     "TypeScript",
     "Tailwind",
     "Figma",
-    "UI/UX",
     "NodeJS",
     "PHP",
     "ExpressJS",
